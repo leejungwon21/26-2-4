@@ -1,0 +1,39 @@
+{
+  "source_rows": 617592,
+  "source_columns": 43,
+  "excluded_trades": 611,
+  "exclusion_reasons": {
+    "좌표 없음": 358,
+    "준공 전 거래": 253
+  },
+  "retained_trades": 616981,
+  "static_conflicts": 919,
+  "unfiltered_counts_match_expected": true,
+  "python": "3.13.2",
+  "pandas": "2.3.3",
+  "numpy": "2.5.2",
+  "model_run": false,
+  "test_split_created": false,
+  "input_sha256": {
+    "data/final/아파트_실거래_전처리_2017_2026_v5.csv.xz": "00d709439e0b36c64c791a81364ce82d84a051d0195c3be0a42dacc3c631493c",
+    "data/regime/seoul_index_2017_2026.csv": "c4562b6dd72bfa2294c0f03233c130e4c08c2aa0b79528a6b855e1ee2606cab3",
+    "data/features/tohuh_regime_start_by_complex.csv": "d2e502b349ac58a78625e27a7b61aa3da25b505f0943aa8171c6ce0eac1d3e7a",
+    "config/cells.yaml": "3d4533ae0ae65efb6dc3fe43fab43d20c101d76ce092cd9d8243d7ce9f4072fe",
+    "config/features.yaml": "d895c8ea4c8f8ccdd9024ad9980918f08c28e9a2c80b89a2e78c327288442045",
+    "config/models.yaml": "1b87b9316889dd68285d29879aa3a46f22372a3737d5051d7d872aa4d9f5d873",
+    "config/regime.yaml": "6c05d33626d379930b7d191ecf099baf073279f70b2ba864c3cab11b37851cfe",
+    "config/split.yaml": "d99f211f7d63aa7e085a5d59e57bc12319dcd766d7621b38d4498b15e1b20961",
+    "config/target.yaml": "ca2bfac5f144aa82c1d5a8f9b5e5f19824f3dee2c444d60928889caaee51f707",
+    "config/types.yaml": "b29033933594d58d61d527d7f07396f6bb85a27df542a74c30d617b88ad6eb7c",
+    "config/access_history/elementary_school_closures_v1.csv": "f22f3ead878f8195580bb8d7b200a98d0e9943747c09868e53a11b1f7fc621a2",
+    "config/access_history/elementary_school_closures_v2.csv": "85252762aa104daa0580172c4877ff5000195ff80bd0247aeba516ec1903d6ac",
+    "config/access_history/middle_high_school_closures_v1.csv": "ad6df04d4667cf4dbee596e2dcac888e11bb74a47dcf9352a0bdb90a6fde98f7",
+    "config/access_history/middle_high_school_closures_v2.csv": "ea88588c2268dfb56ffd7b8a6487e38847ce281aac58990b100f2c866be97055",
+    "config/access_history/rail_added_platforms_v1.csv": "16695f3bee314aebb1217131f16105949580955d806d64c81ea867cf30265022",
+    "config/access_history/rail_open_events_v1.csv": "93954e72da69fe5fa4659201605f3301ae91421817349845dd0657cc1f625a4b",
+    "config/access_history/rail_open_events_v2.csv": "8c5730df310c1dd4b1b22a83ae820971241e02ee70a3c9e5de9302a794243270",
+    "data/raw/kric_stations_bbox_20260630.csv": "be4c39d16133ed6a4a1f2e86ec395a256bfb3b7570bf0deb8e109612bd4a14d7",
+    "data/raw/schools_page1.json": "b670a0333b72e19e8e6087daf95f4e0d80e6284855956363b660709b94b50283",
+    "data/raw/schools_page2.json": "f459de7ddfdab1fefa3890c37516f655f3f8ceed89b85087125a2b1365171b40"
+  }
+}

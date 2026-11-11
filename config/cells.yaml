@@ -1,0 +1,19 @@
+# 셀 분석표 구현에서 필요한 세부 규칙. 연구 규칙은 target/features/regime.yaml을 따른다.
+version: v1
+source: data/final/아파트_실거래_전처리_2017_2026_v5.csv.xz
+output: reports/final/cells
+area_rounding: half_even  # 기존 파일럿 numpy.round와 동일
+window_price: price_per_m2
+slope_price: total_price  # handoff §4-2의 ln 거래가
+slope_weight: n_times_span_months
+feature_date: start_month_end
+static_snapshot: most_frequent_nonmissing  # 동률이면 문자열 정렬 순서. 현재값 정적 가정
+fallback_approval_month: 7
+reconstruction_age_months: 360
+radius_m: 1000
+not_built_at_start: exclude_cell  # 음수 연식을 0으로 바꾸지 않음
+controls:
+  price_lookback_months: [12, 4]
+  price_cutoffs_manwon: [90000, 150000]
+  turnover_months: 12
+  previous_y: previous_window_truncated_before_current_start_window

@@ -13,7 +13,8 @@
 | `dataset/` | v3 → v4 학교 열 정리 |
 | `buildreg/` | 건축물대장 조회(내 PC에서 실행)와 반영 → v5 |
 | `regime/` | 자체 지수, 국면 판정 규칙, 부트스트랩, 공식 지수 비교, 파일럿 |
-| `cells/`, `model/`, `evaluate/`, `report/` | 예정: 셀×국면 표 → 모델 → 평가·유형 → reports/final |
+| `cells/` | `build_cells.py`: v5에서 창·기울기 셀×국면 표와 시점 특성·통제변수·제외 내역 생성 |
+| `model/`, `evaluate/`, `report/` | 예정: 모델 → 평가·유형 → reports/final |
 
 ## 데이터 재생성 순서
 
@@ -40,3 +41,13 @@ python src/regime/compare_official.py        # 공식 지수 비교, 확정 국�
 ```
 
 판정 규칙은 `regime/turning_points.py` 한 곳에만 있다. `tests/test_regime.py`가 저장된 지수로 확정 국면이 다시 나오는지 확인한다.
+
+## 셀×국면 표
+
+```
+python src/cells/build_cells.py
+python tools/verify_cells.py
+```
+
+입력은 커밋된 v5·자체지수·시설 이력만 필요하다. 별도 API 키나 `data/processed`는 필요 없다.
+출력과 표본 변화는 `reports/final/cells/README.md`에 설명했다. 모델 학습은 하지 않는다.

@@ -33,7 +33,7 @@ def sha(f):
 def main():
     now = {rel: sha(f) for rel, f in files()}
     if '--update' in sys.argv:
-        OUT.write_text(json.dumps(now, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+        OUT.write_text(json.dumps(now, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
         print(f'기록: {len(now)}개 → {OUT.relative_to(ROOT)}')
         return
     saved = json.loads(OUT.read_text(encoding='utf-8'))
