@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "tables": 12,
+  "learned_models": 36,
+  "python": "3.13.2",
+  "sklearn": "1.9.1",
+  "numpy": "2.5.2",
+  "test_evaluated": false
+}

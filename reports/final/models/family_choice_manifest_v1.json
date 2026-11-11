@@ -1,0 +1,13 @@
+{
+  "test_evaluated": false,
+  "family_choice_metric": "pooled_weighted_cv_rmse",
+  "tie_break": [
+    "b0",
+    "b1",
+    "ridge",
+    "random_forest",
+    "catboost"
+  ],
+  "script_sha256": "3ce305b348e2a2d22429536a8923bc2807d7c0998a4505d7eee8820a7e4c62ba",
+  "choices_sha256": "d7955cd8780c0b308cb7b9538fb1eff6585b2dc7a3a32a148c9961a76690e240"
+}

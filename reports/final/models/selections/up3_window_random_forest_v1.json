@@ -1,0 +1,34 @@
+{
+  "table": "up3_window",
+  "model": "random_forest",
+  "params": {
+    "max_depth": null,
+    "max_features": 0.33,
+    "min_samples_leaf": 5,
+    "n_estimators": 500
+  },
+  "cv_rmse": 9.748073381182646,
+  "train_cells": 4452,
+  "artifact_sha256": "308229ab7559e1a3223a0ad9c06a1537b13035ffb92879cae65e038bafaa0a24",
+  "input_sha256": {
+    "reports/final/cells/up1_window_v1.csv.xz": "9a954523124b3518b1d59aeb51a21c5114b52cdddb0f1206468bf53723812909",
+    "reports/final/cells/up1_slope_v1.csv.xz": "e2d0955bc68eb6e2baba13ddb822aba2854b40a7ca4bcfc8b7a0eca87f9c46fa",
+    "reports/final/cells/corr_window_v1.csv.xz": "9e98d95dea51c14cd999a619429ce06e88ae8bf948feffc90b91d76108261bb3",
+    "reports/final/cells/corr_slope_v1.csv.xz": "b5e106c97f5bd852052aa4d58a667d0af041560cccd0d321822ca76a83bd076c",
+    "reports/final/cells/up2_window_v1.csv.xz": "b2ba330a8c008e900cd866d4dc1681f7c09933ff33b54d71bad7c3670ff7dfdf",
+    "reports/final/cells/up2_slope_v1.csv.xz": "da8747d19e836cc06b381826e5c2bbfb3e5100702a8c6fe8340d834b54cb52d5",
+    "reports/final/cells/down_window_v1.csv.xz": "459b338ed86e37380437026d9650e99695bfccb331682c2fc0ff1f0357d88428",
+    "reports/final/cells/down_slope_v1.csv.xz": "35f02790757ed77ad803c4924e58647a6ecb14465a3206fe52a690d8cbb899e5",
+    "reports/final/cells/rec_window_v1.csv.xz": "f8cbf1adeedab066e2158b0c6b1ecdba21c8f76ab481722dc8393ef8e502467f",
+    "reports/final/cells/rec_slope_v1.csv.xz": "fd7572797f1fb56fb9280cac86ce743e6b3791e65bdd752aac21086d6315f751",
+    "reports/final/cells/up3_window_v1.csv.xz": "f819b955b6d221015039bf19fee03da73389160d6e943bf1ce6d5aa2024bf1ad",
+    "reports/final/cells/up3_slope_v1.csv.xz": "7478bb25f9850ccae8d2a54d19555d6b27387484de4630f91824e80bed340b42",
+    "config/split.yaml": "bf8330770d5b194c95fc8fca80b92be98c06a5f86ab88648930716cfd43a4d1e",
+    "config/models.yaml": "feb49af24253d556b5cf3d50d9e75ce79c23d759cd962851de83215910e698f0",
+    "config/training.yaml": "7d358f953e7bb24c3f8f1a34b9be2de87c1bf6d648825abe8fa9916245eb66f1",
+    "config/features.yaml": "d895c8ea4c8f8ccdd9024ad9980918f08c28e9a2c80b89a2e78c327288442045",
+    "config/regime.yaml": "6c05d33626d379930b7d191ecf099baf073279f70b2ba864c3cab11b37851cfe",
+    "src/model/train.py": "f71abb196a0606d6294ca6e8e2b57d822b78fdcff1fb9d6cd551f76af8e42265"
+  },
+  "elapsed_seconds": 123.52
+}

@@ -1,0 +1,13 @@
+{
+  "group_isolation_passed": true,
+  "assigned_rows": 74415,
+  "dongs": 319,
+  "test_dongs": 64,
+  "explicit_feature_count_including_missing_indicators": 30,
+  "oof_models_checked": 36,
+  "cv_model_families_checked": 12,
+  "test_predictions_verified": true,
+  "model_scores_checked": 60,
+  "intervals_checked": 300,
+  "model_refit_performed": false
+}

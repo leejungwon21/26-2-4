@@ -1,0 +1,13 @@
+﻿table,selected_model,cv_rmse,selection_uses_test
+up1_window,catboost,8.16905059705,False
+up1_slope,catboost,10.5173492181,False
+corr_window,catboost,5.90563559266,False
+corr_slope,catboost,4.51306081616,False
+up2_window,catboost,8.51916578837,False
+up2_slope,catboost,11.3326219573,False
+down_window,catboost,8.88974871243,False
+down_slope,catboost,9.53921374574,False
+rec_window,catboost,6.90049834472,False
+rec_slope,catboost,7.99794742135,False
+up3_window,catboost,8.72476241955,False
+up3_slope,catboost,10.8058310288,False

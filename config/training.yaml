@@ -1,0 +1,20 @@
+version: v1
+methods: [window, slope]
+selection_metric: pooled_weighted_cv_rmse
+test_dong_rounding: ceil
+test_dong_rng: numpy_default_rng_permutation_of_sorted_dongs
+cv: per_table_GroupKFold  # 동일 표의 모든 모델은 동일 fold 사용
+workers: 4
+catboost_threads: 2
+forest_threads: 1
+numeric_missing: training_fold_median_keep_empty_features
+category_missing: __MISSING__
+unknown_district_baseline: training_global_weighted_mean
+catboost_final_iterations: median_best_iteration_plus_one_across_folds
+spearman: weighted_pearson_of_average_ranks  # 동점은 평균 순위. 상수 예측은 정의 불가(null)
+tail_share: 0.20
+tail_ties: fractional_membership_at_cell_count_cutoff
+bootstrap: paired_complex_resampling_of_fixed_test_predictions
+interpretation_gate: test_rmse_less_than_b1  # 후속 해석을 위한 표시이며 튜닝/모델 선택이 아님
+output: reports/final/models
+artifacts: results/models_v1  # 크기가 큰 학습 모델은 Git 제외. 명령으로 재생성

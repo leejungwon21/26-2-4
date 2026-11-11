@@ -1,0 +1,7 @@
+{
+  "complete": true,
+  "models_evaluated": 60,
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "complex_id",
+  "bootstrap_conditional_on_fixed_models": true
+}
